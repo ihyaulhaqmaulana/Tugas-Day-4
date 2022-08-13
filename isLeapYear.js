@@ -16,10 +16,10 @@
 // ================================================================
 
 function isLeapYear(year) {
-  if (year % 4 == 0 && year % 400 == 0) {
+  if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
     return "Kabisat";
   }
 
   return "Bukan kabisat";
 }
-console.log(isLeapYear(1900));
+console.log(isLeapYear(100));
